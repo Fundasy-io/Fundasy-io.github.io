@@ -2035,5 +2035,6 @@ section {
   color: #012970;
 }
 .google-form {
+  display: flex;
   justify-content: center;
 } 
