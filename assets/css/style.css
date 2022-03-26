@@ -2071,16 +2071,3 @@ section {
   display: flex;
   justify-content: center;
 }
-.google-form-iframe {
-  height: 677px;
-}
-@media (max-width: 700px) {
-  .google-form-iframe {
-    height: 700px;
-  }
-}
-@media (max-width: 540px) {
-  .google-form-iframe {
-    height: 720px;
-  }
-}
