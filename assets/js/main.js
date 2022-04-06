@@ -63,12 +63,16 @@
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
+		console.log('scrollto asdfasdf')
+		console.log(offset)
 
     if (!header.classList.contains('header-scrolled')) {
       offset -= 10
     }
 
     let elementPos = select(el).offsetTop
+		console.log(select(el))
+		console.log(elementPos)
     window.scrollTo({
       top: elementPos - offset,
       behavior: 'smooth'
@@ -130,6 +134,8 @@
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
+		console.log('intercept onclick')
+		console.log(e)
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -140,6 +146,8 @@
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }
+			console.log('scrolling to')
+			console.log(this.hash)
       scrollto(this.hash)
     }
   }, true)
